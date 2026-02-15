@@ -1,0 +1,9 @@
+# Runtime artifacts
+.work/
+
+# Dependencies
+node_modules/
+
+# Bun / logs
+bun.lockb
+*.log

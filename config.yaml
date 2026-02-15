@@ -1,0 +1,14 @@
+defaults:
+  chunkLines: 100
+  concurrency: 10
+  template: "chunker"
+  instructions: "go"
+  maxRetries: 3
+  backoffMs: 500
+
+paths:
+  chunkDir: "./.work/chunks"
+  outputDir: "./.work/outputs"
+
+subagent:
+  command: 'cat "$BUFFER" | subd -t "$TEMPLATE" -i "$INSTRUCTIONS"'

@@ -1,0 +1,12 @@
+{
+  "name": "pllm",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "pllm": "./src/cli.mjs"
+  },
+  "scripts": {
+    "start": "bun run ./src/cli.mjs"
+  }
+}
